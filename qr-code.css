@@ -1,0 +1,41 @@
+input {
+  padding: 0.6rem 0.9rem;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-bottom: 1rem
+}
+
+input:focus {
+  box-shadow: 0 0 5px 0 rgba(251, 63, 109, 0.75);
+  border: 1px solid #fff;
+  outline: 0;
+}
+
+button {
+  background-color: #fff;
+  color: #fb3f6d;
+  border: 1px solid #fb3f6d;
+  padding: 0.6rem 0.9rem;
+  font-size: 16px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  /* cursor: pointer; */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff5f7;
+  transition-duration: 0.2s
+}
+
+button:focus {
+  background-color: #fff5f7;
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(251, 63, 109, 0.75);
+}
+
+canvas {
+  margin: 10px;
+}
