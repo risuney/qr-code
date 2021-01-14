@@ -21,7 +21,6 @@ button {
   font-size: 16px;
   border-radius: 3px;
   margin-bottom: 1rem;
-  /* cursor: pointer; */
   cursor: pointer;
 }
 
@@ -36,6 +35,34 @@ button:focus {
   box-shadow: 0 0 5px 0 rgba(251, 63, 109, 0.75);
 }
 
+#down {
+  background-color: #fb3f6d;
+  color: #fff;
+  border: 1px solid #da2652;
+  padding: 0.6rem 0.9rem;
+  font-size: 16px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+#down:hover {
+  background-color: #fff5f7;
+  border: 1px solid #fb3f6d;
+  color: #fb3f6d;
+  transition-duration: 0.2s
+}
+
+#down:focus {
+  color: #fb3f6d;
+  border: 1px solid #fb3f6d;
+  background-color: #fff5f7;
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(251, 63, 109, 0.75);
+}
+
 canvas {
+  width: 250px;
+  height: 250px;
   margin: 10px;
 }
