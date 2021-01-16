@@ -66,3 +66,20 @@ canvas {
   height: 250px;
   margin: 10px;
 }
+
+#size {
+  width: 6rem;
+  text-align: center;
+}
+
+#size::placeholder {
+  text-align: center;
+}
+
+input:focus::placeholder {
+  visibility: hidden;
+}
+
+#make {
+  margin-right: 10px
+}
