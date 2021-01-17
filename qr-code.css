@@ -1,6 +1,6 @@
 input {
-  padding: 0.6rem 0.9rem;
-  font-size: 16px;
+  padding: 12px 14.4px;
+  font-size: 18px;
   border-radius: 3px;
   border: 1px solid #ddd;
   box-sizing: border-box;
@@ -17,10 +17,11 @@ button {
   background-color: #fff;
   color: #fb3f6d;
   border: 1px solid #fb3f6d;
-  padding: 0.6rem 0.9rem;
-  font-size: 16px;
+  padding: 12px 14.4px;
+  font-size: 18px;
   border-radius: 3px;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+  width: 88px;
   cursor: pointer;
 }
 
@@ -37,11 +38,9 @@ button:focus {
 
 #down {
   background-color: #fb3f6d;
+  width: 130px;
   color: #fff;
   border: 1px solid #da2652;
-  padding: 0.6rem 0.9rem;
-  font-size: 16px;
-  border-radius: 3px;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -68,7 +67,7 @@ canvas {
 }
 
 #size {
-  width: 6rem;
+  width: 120px;
   text-align: center;
 }
 
@@ -81,5 +80,10 @@ input:focus::placeholder {
 }
 
 #make {
-  margin-right: 10px
+  margin-right: 10px;
+}
+
+#ip-qrcode {
+  width: 100%;
+  font-size: 20px
 }

@@ -10,13 +10,15 @@
   </head>
   <body>
     <div class="qr-input">
-      <input type="text" name="" value="" id="ip-qrcode" placeholder="Text">
-      <input type="number" pattern="\d*" onpaste="return false" name="" value="" placeholder="size(px)" id="size">
-      <button type="button" id="make">Make</button>
-      <button class="hidden" type="button" id="down" onclick="download()">Download</button>
-      <button type="button" name="button" id="500">500px</button>
-      <button type="button" name="button" id="1000">1000px</button>
-      <button type="button" name="button" id="1500">1500px</button>
+      <input type="text" name="" value="" id="ip-qrcode" placeholder="Text"><br>
+      <div class="option">
+        <input type="number" pattern="\d*" onpaste="return false" name="" value="" placeholder="size(px)" id="size">
+        <button type="button" id="make">Make</button>
+        <button class="hidden" type="button" id="down" onclick="download()">Download</button>
+        <button type="button" name="button" id="500">500px</button>
+        <button type="button" name="button" id="1000">1000px</button>
+        <button type="button" name="button" id="1500">1500px</button>        
+      </div>
     </div>
     <div class="" id="op-qrcode"></div>
     <a class="hidden" id="link">a</a>
