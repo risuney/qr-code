@@ -13,8 +13,8 @@
       <input type="text" name="" value="" id="ip-qrcode" placeholder="Text"><br>
       <div class="option">
         <input type="number" pattern="\d*" onpaste="return false" name="" value="" placeholder="size(px)" id="size">
-        <button type="button" id="make">Make</button>
-        <button class="hidden" type="button" id="down" onclick="download()">Download</button>
+        <button type="button" id="make" title="Ctrl+M">Make</button>
+        <button class="hidden" type="button" id="down" onclick="download()" title="Ctrl+D">Download</button>
         <button type="button" name="button" id="500">500px</button>
         <button type="button" name="button" id="1000">1000px</button>
         <button type="button" name="button" id="1500">1500px</button>
@@ -24,6 +24,7 @@
     <a class="hidden" id="link">a</a>
     <script src="jquery.min.js" charset="utf-8"></script>
     <script src="jquery.qrcode.min.js" charset="utf-8"></script>
+    <script src="shortcut.js" charset="utf-8"></script>
     <script src="qr-code.js" charset="utf-8"></script>
   </body>
 </html>

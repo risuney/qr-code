@@ -4,7 +4,8 @@ function canvas() {
 };
 
 function hidden() {
-  $('#op-qrcode').empty()
+  $('#op-qrcode').empty();
+  $('#down').addClass('hidden')
 };
 
 $('#make').on('click', function(){
@@ -18,7 +19,7 @@ $('#make').on('click', function(){
     $('#op-qrcode').qrcode({text: text, width: size, height: size});
     canvas();
   } else {
-    $('#op-qrcode').qrcode({text: text});
+    $('#op-qrcode').qrcode({text: text, width: 1000, height: 1000});
     canvas();
   }
 });
@@ -66,3 +67,27 @@ function download() {
   link.download = 'qrcode.png';
   link.click();
 };
+
+shortcut.add('Ctrl+D',function() {
+  download()
+});
+
+shortcut.add('Ctrl+M',function() {
+  hidden();
+  var input = $('#ip-qrcode').val();//inputのvalueを取得
+  var size = $('#size').val();
+  var text = unescape(encodeURIComponent(input));//日本語対応
+  if (input == '') {
+    alert('文字を入力してください。\nPlease enter the characters.');
+  } else if (size > 0) {
+    $('#op-qrcode').qrcode({text: text, width: size, height: size});
+    canvas();
+  } else {
+    $('#op-qrcode').qrcode({text: text});
+    canvas();
+  }
+});
+
+shortcut.add('Ctrl+Shift+C',function() {
+  hidden()
+});
